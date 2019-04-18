@@ -27,8 +27,8 @@ CREATE TABLE `T01_Usuarios` (
 INSERT INTO `T01_Usuarios` (`T01_CodUsuario`, `T01_Password`, `T01_DescUsuario`, `T01_NumAccesos`, `T01_FechaHoraUltimaConexion`, `T01_Perfil`) VALUES
 ('admin', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'Administrador', 58, 1555531665, 'Administrador'),
 ('laura', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'Laura', 10, 1555517422, 'Usuario'),
-('maria', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'pringada', 2, 1555431787, 'Usuario'),
-('natalia', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'puta', 5, 1555431528, 'Usuario');
+('maria', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'alonso', 2, 1555431787, 'Usuario'),
+('natalia', '4dd09b8f659e27847f94782920fb7e41b2c5afbd7f419a4a3ed8ab7aa5b7f944', 'gil', 5, 1555431528, 'Usuario');
 
 -- --------------------------------------------------------
 
