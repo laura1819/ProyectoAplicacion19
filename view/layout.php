@@ -61,12 +61,12 @@ if (isset($_SESSION['pagina'])) {
                         <h4 class="text-uppercase mb-4">Repositorio</h4>
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item">
-                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/laura1819/ProyectoAplicacion19.git">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
                                     <i class="fab fa-gitlab"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/laura1819/ProyectoAplicacion19">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/laura1819/ProyectoAplicacion19" target="blank">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </li>
