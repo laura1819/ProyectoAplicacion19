@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<departamentos>
+  <departamento>
+    <T02_CodDepartamento>CMP</T02_CodDepartamento>
+    <T02_DescDepartamento>Departamento Compras</T02_DescDepartamento>
+    <T02_FechaCreacionDepartamento>1548270534</T02_FechaCreacionDepartamento>
+    <T02_VolumenDeNegocio>12000.5</T02_VolumenDeNegocio>
+    <T02_FechaBajaDepartamento/>
+  </departamento>
+  <departamento>
+    <T02_CodDepartamento>CNT</T02_CodDepartamento>
+    <T02_DescDepartamento>Departamento Contabilidad</T02_DescDepartamento>
+    <T02_FechaCreacionDepartamento>1548270534</T02_FechaCreacionDepartamento>
+    <T02_VolumenDeNegocio>76000.7</T02_VolumenDeNegocio>
+    <T02_FechaBajaDepartamento/>
+  </departamento>
+  <departamento>
+    <T02_CodDepartamento>GST</T02_CodDepartamento>
+    <T02_DescDepartamento>Departamento Gestion</T02_DescDepartamento>
+    <T02_FechaCreacionDepartamento>1548270534</T02_FechaCreacionDepartamento>
+    <T02_VolumenDeNegocio>36000.5</T02_VolumenDeNegocio>
+    <T02_FechaBajaDepartamento/>
+  </departamento>
+  <departamento>
+    <T02_CodDepartamento>VNT</T02_CodDepartamento>
+    <T02_DescDepartamento>Departamento Ventas</T02_DescDepartamento>
+    <T02_FechaCreacionDepartamento>1548270534</T02_FechaCreacionDepartamento>
+    <T02_VolumenDeNegocio>12000.9</T02_VolumenDeNegocio>
+    <T02_FechaBajaDepartamento/>
+  </departamento>
+</departamentos>
