@@ -6,6 +6,7 @@
  * @modifiedDate 28/01/2019
  * @version 1.5
  */
+
 ?>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">

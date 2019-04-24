@@ -15,6 +15,9 @@
  * 
  * Esta clase permite conectarse con la base de datos
  */
+error_reporting(E_ALL);
+        ini_set('display_errors', '0');
+
 class DBPDO {
     
     /**

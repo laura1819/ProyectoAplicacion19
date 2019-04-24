@@ -9,6 +9,8 @@
  * @modifiedDate 15/04/2019
  * @version 1.5
  */
+error_reporting(E_ALL);
+        ini_set('display_errors', '0');
 require_once 'UsuarioPDO.php';
 /**
  * Class Usuario

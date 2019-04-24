@@ -7,16 +7,17 @@
  * @modifiedDate 28/01/2019
  * @version 1.5
  */
-
+error_reporting(E_ALL);
+        ini_set('display_errors', '0');
 $entradaOK = true;
 //Inicializa un array de valores con tantas posiciones como campos de datos tenga el formulario.
-$aFormulario = [pass1 => null, //Almacena el valor del pass1 dentro de una lista cuando éste sea correcto.
-    pass2 => null, //Almacena el valor del pass2 dentro de una lista cuando éste sea correcto.
-    pass3 => null]; //Almacena el valor del pass3 dentro de una lista cuando éste sea correcto.
+$aFormulario = ['pass1' => null, //Almacena el valor del pass1 dentro de una lista cuando éste sea correcto.
+    'pass2' => null, //Almacena el valor del pass2 dentro de una lista cuando éste sea correcto.
+    'pass3' => null]; //Almacena el valor del pass3 dentro de una lista cuando éste sea correcto.
 //Se inicializa un array de errores con tantas posiciones como campos de entrada de datos tenga el formulario.
-$aErrores = [pass1 => null, //Guarda posibles errores en el campo pass1.
-    pass2 => null, //Guarda posibles errores en el campo pass2.
-    pass3 => null]; //Guarda posibles errores en el campo pass3.
+$aErrores = ['pass1' => null, //Guarda posibles errores en el campo pass1.
+    'pass2' => null, //Guarda posibles errores en el campo pass2.
+    'pass3' => null]; //Guarda posibles errores en el campo pass3.
 $passVieja = $_SESSION['usuario']->getPassword();
 $usuario = $_SESSION['usuario'];
 if (isset($_REQUEST['Cancelar'])) {

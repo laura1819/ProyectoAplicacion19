@@ -13,6 +13,8 @@
  * @modifiedDate 15/04/2019
  * Fecha ultima revision 16-01-2019
  */
+error_reporting(E_ALL);
+        ini_set('display_errors', '0');
 if (isset($_REQUEST['Salir'])) {
     unset($_SESSION['usuario']);
     session_destroy();

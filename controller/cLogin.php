@@ -11,8 +11,8 @@
 $entradaOk = true;
 $aFormulario = [usuario => null,
     pass => null];
-$aErrores = [usuario => null,
-    pass => null]; //Guarda posibles errores.
+$aErrores = ['usuario' => null,
+    'pass' => null]; //Guarda posibles errores.
 if (isset($_REQUEST['Salir'])) {
     header("Location: ../indexProyectoDWES.php");
     exit;
