@@ -88,7 +88,7 @@ class UsuarioPDO implements UsuarioDB {
      * Función para dar de alta a un usuario
      * 
      * @function altaUsuario();        
-     * @author Christian Muñiz de la Huerga
+     * @author Laura Fernandez
      * @version 1.0
      * @since 2019-01-15
      * @param $codUsuario Código de usuario.
