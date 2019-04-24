@@ -44,7 +44,7 @@ if (isset($_REQUEST['Cancelar'])) {
         $aFormulario[pass] = $_REQUEST['pass']; //Se vuelva en una variable el hash generado con sha256 de la contraseña introducida por el usuario.
         $aFormulario[descripcion] = $_REQUEST['descripcion']; //Recoge el valor del campo ya validado.
         $usuario = Usuario::altaUsuario($aFormulario[usuario], $aFormulario[pass], $aFormulario[descripcion]);
-        $_SESSION['visitas'] = $usuario->registrarUltimaConexion();
+        $_SESSION['visitas'] = $usuario->registrarUltimaConexion(); // llamamos al metodo que nos devuelve un mensaje dependiendo de si 1 visita o mas
         $_SESSION['usuario'] = $usuario;
         $_SESSION['pagina'] = 'inicio';
         Header("Location: index.php");

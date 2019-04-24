@@ -11,22 +11,22 @@
 error_reporting(E_ALL);
         ini_set('display_errors', '0');
         
-if (isset($_REQUEST['Cancelar'])) {
-    $_SESSION['pagina'] = 'inicio';
-    header("Location: index.php");
+if (isset($_REQUEST['Cancelar'])) { // si hemos pulsado cancelar
+    $_SESSION['pagina'] = 'inicio';     // metemos la pagina de inicio en session
+    header("Location: index.php");      // y nos vamos al index para que nos lleve al inicio
 } else {
-    if (isset($_REQUEST['Confirmar'])) {
-        $usuario = $_SESSION['usuario'];
-        if ($usuario->borrarUsuario()) {
-            unset($_SESSION['usuario']);
-            session_destroy();
-            $_SESSION['pagina'] = 'login';
-            header("Location: index.php");
+    if (isset($_REQUEST['Confirmar'])) { // si hemos pulsado en confirmar
+        $usuario = $_SESSION['usuario']; //usuario en la sesion
+        if ($usuario->borrarUsuario()) { //llamamos al metodo borrar usuario
+            unset($_SESSION['usuario']);   
+            session_destroy();              // destruimos la sesion
+            $_SESSION['pagina'] = 'login';   // pasamos la pagina del login
+            header("Location: index.php");   // nos vamos al index con la pagina login 
         }
     } else {
-        $_SESSION['pagina'] = 'borrarCuenta';
+        $_SESSION['pagina'] = 'borrarCuenta';  // si no nos mantenemos en la pagina
         $_SESSION['titulo'] = 'Borrar Cuenta';
-        require_once $vistas["layout"];
+        require_once $vistas["layout"];  // con el layout cargado
     }
 }
 ?>

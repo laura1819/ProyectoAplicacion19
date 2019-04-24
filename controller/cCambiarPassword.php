@@ -3,7 +3,7 @@
 /**
  * Fichero cCambiarPassword.php
  * Este fichero permite cambiar la contraseña de una cuenta
- * @author Christian Muñiz de la Huerga
+ * @author Laura Fernandez
  * @modifiedDate 28/01/2019
  * @version 1.5
  */
@@ -34,7 +34,7 @@ if (isset($_REQUEST['Cancelar'])) {
                 $_REQUEST[$campo] = "";
             }
         }
-        if ($passVieja != $_REQUEST['pass1']) {
+        if ($passVieja != $_REQUEST['pass1']) { // mostrar los errores si no coinciden
             $aErrores[pass1] = $aErrores[pass1] . ' La contraseña no coincide con la base de datos';
             $entradaOK = false;
         }
@@ -47,13 +47,13 @@ if (isset($_REQUEST['Cancelar'])) {
             $entradaOK = false;
         }
     }
-    if (isset($_REQUEST['Confirmar']) && $entradaOK == true) {
-        $usuario = $usuario->modificarUsuario($_REQUEST['pass2'], null, null);
-        $_SESSION['usuario'] = $usuario;
+    if (isset($_REQUEST['Confirmar']) && $entradaOK == true) {  // si la entrada es buena
+        $usuario = $usuario->modificarUsuario($_REQUEST['pass2'], null, null); //llamamos al modificarUsuariole pasamos la contraseña tambien recibe deesc y perfil en este caso no hace falta
+        $_SESSION['usuario'] = $usuario; // volvemos al inicio
         $_SESSION['pagina'] = 'inicio';
         header("Location: index.php");
-    } else {
-        $_SESSION['pagina'] = 'cambiarPassword';
+    } else { // y si no nos mantenemos en la pagina en la que estamos
+        $_SESSION['pagina'] = 'cambiarPassword'; 
         $_SESSION['titulo'] = 'Cambiar Password';
         require_once $vistas["layout"];
     }

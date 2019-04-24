@@ -2,7 +2,7 @@
 /**
  * Fichero vMiCuenta.php
  * Este fichero permite visualizar la página para editar la cuenta
- * @author Christian Muñiz de la Huerga
+ * @author Laura Fernandez
  * @modifiedDate 28/01/2019
  * @version 1.5
  */

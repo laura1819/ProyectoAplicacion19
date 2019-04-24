@@ -9,8 +9,8 @@
  */
 
 $entradaOk = true;
-$aFormulario = [usuario => null,
-    pass => null];
+$aFormulario = ['usuario' => null,
+    'pass' => null];
 $aErrores = ['usuario' => null,
     'pass' => null]; //Guarda posibles errores.
 if (isset($_REQUEST['Salir'])) {
@@ -32,21 +32,21 @@ if (isset($_REQUEST['Acceder'])) {
         }
     }
 }
-if (isset($_REQUEST['Acceder']) && $entradaOk) {
-    $aFormulario[usuario] = $_REQUEST['usuario'];
+if (isset($_REQUEST['Acceder']) && $entradaOk) { // si la entrada es ok 
+    $aFormulario[usuario] = $_REQUEST['usuario']; // guardamos los campos
     $aFormulario[pass] = $_REQUEST['pass'];
-    $usuario = Usuario::validarUsuario($aFormulario[usuario], $aFormulario[pass]);
-    if (is_null($usuario)) {
-        $aErrores[pass] = $aErrores[pass] . " Usuario o contraseña incorrectos";
-    } else {
-        $_SESSION['usuario'] = $usuario;
+    $usuario = Usuario::validarUsuario($aFormulario[usuario], $aFormulario[pass]); // llamamos al metodo valdiar usuario
+    if (is_null($usuario)) {  // si es null
+        $aErrores[pass] = $aErrores[pass] . " Usuario o contraseña incorrectos"; // podemos un mensade de que es erroneo
+    } else {  // si esta bien 
+        $_SESSION['usuario'] = $usuario; // guardamos el usuario y las visitas
         $_SESSION['pagina'] = 'inicio';
-        $_SESSION['visitas'] = $usuario->registrarUltimaConexion();
-        header("Location: index.php");
+        $_SESSION['visitas'] = $usuario->registrarUltimaConexion(); // este metodo nos devuelve un mensaje depende de si es la primera visita o la ultima
+        header("Location: index.php"); // y vamops al index con el usuario y la pagina de inicio
         exit;
     }
-}
-$_SESSION['pagina'] = 'login';
+} // y si no seguimos en la pagina del login con el layout pertinente
+$_SESSION['pagina'] = 'login'; 
 $_SESSION['titulo'] = 'Inicio de Sesión';
 require_once $vistas["layout"];
 ?>
