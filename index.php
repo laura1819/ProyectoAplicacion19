@@ -3,7 +3,7 @@
 /**
  * Fichero index.php
  * Este fichero permite controlar el controlador que se ejecuta en cada momento
- * @author Christian Muñiz de la Huerga
+ * @author Laura fernandez
  * @modifiedDate 28/01/2019
  * @version 1.5
  */
