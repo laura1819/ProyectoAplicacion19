@@ -25,6 +25,7 @@ $controladores = [
     'miCuenta' => 'controller/cMiCuenta.php',
     'borrarCuenta' => 'controller/cBorrarCuenta.php',
     'cambiarPassword' => 'controller/cCambiarPassword.php',
+    'wip' => 'controller/cWip.php',
 ];
 
 $vistas = [
@@ -35,5 +36,6 @@ $vistas = [
     'miCuenta' => 'view/vMiCuenta.php',
     'borrarCuenta' => 'view/vBorrarCuenta.php',
     'cambiarPassword' => 'view/vCambiarPassword.php',
+    'wip' => 'view/vWip.php',
 ];
 ?>

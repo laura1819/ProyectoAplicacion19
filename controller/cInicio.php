@@ -41,6 +41,20 @@ if (isset($_REQUEST['cambiarPass'])) { // si pulsamos cambiar pass
 }
 
 
+if (isset($_REQUEST['wip'])) { // si pulsamos editar perfil
+    $_SESSION['pagina'] = 'wip'; // vamos a la pagina mi cuenta
+    header("Location: index.php");
+    exit;
+}
+
+//if (isset($_REQUEST['wip'])) { 
+  //  $_SESSION['pagina'] = 'wip'; 
+  //  header("Location: index.php");
+ //   exit;
+//}
+
+
+
 
 if (!isset($_SESSION['usuario'])) { // si en la sesion no tenemos usuario
     header("Location: index.php"); // vamos al index sin el usuario

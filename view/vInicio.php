@@ -63,16 +63,16 @@
                                     </div>
                                     <div class="col-md-4">
                                         <h3 class="text-center text-uppercase text-secondary mb-0">Mantenimiento</h3>
-                                        <input type="submit" value="Mto.Departamentos" class="btn btn-lg btn-block btn-success">
+                                        <input type="submit" name="wip" value="Mto.Departamentos" class="btn btn-lg btn-block btn-success">
                                         <?php if ($_SESSION['usuario']->getPerfil() == 'Administrador') { ?>
-                                            <input type="submit"  value="Mantenimiento de Usuarios" class="btn btn-lg btn-block btn-warning"> 
+                                            <input type="submit" name="wip" value="Mantenimiento de Usuarios" class="btn btn-lg btn-block btn-warning"> 
                                         <?php } ?>
 
                                     </div>
                                     <div class="col-md-4">
                                         <h3 class="text-center text-uppercase text-secondary mb-0">ServiciosWeb</h3>
-                                        <input type="submit" value="SOAP" class="btn btn-lg btn-block btn-success">
-                                        <input type="submit" value="REST" class="btn btn-lg btn-block btn-success">
+                                        <input type="submit" name="wip" value="SOAP" class="btn btn-lg btn-block btn-success">
+                                        <input type="submit" name="wip" value="REST" class="btn btn-lg btn-block btn-success">
 
                                     </div>
 
@@ -80,11 +80,5 @@
 
                             </div>
                         </section>
-
-
-
-
-
-
                     </form>
 
