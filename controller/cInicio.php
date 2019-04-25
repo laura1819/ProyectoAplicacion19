@@ -31,7 +31,7 @@ if (isset($_REQUEST['edPerfil'])) { // si pulsamos editar perfil
 
 if (isset($_REQUEST['borrarCuenta'])) {  // si pulsamos en borrar cuenta
     $_SESSION['pagina'] = 'borrarCuenta'; // vamos a la pagina borrar cuenta
-    header("Location: index.php");
+    header("Location: index.php"); 
     exit;
 }
 if (isset($_REQUEST['cambiarPass'])) { // si pulsamos cambiar pass
@@ -45,7 +45,6 @@ if (isset($_REQUEST['cambiarPass'])) { // si pulsamos cambiar pass
 if (!isset($_SESSION['usuario'])) { // si en la sesion no tenemos usuario
     header("Location: index.php"); // vamos al index sin el usuario
 } else {
-    $_SESSION['titulo'] = 'Inicio del Programa'; 
     require_once $vistas["layout"];
 }
 ?>

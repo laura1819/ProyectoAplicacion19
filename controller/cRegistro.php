@@ -50,7 +50,6 @@ if (isset($_REQUEST['Cancelar'])) {
         Header("Location: index.php");
     } else {
         $_SESSION['pagina'] = 'registroUsuario';
-        $_SESSION['titulo'] = 'Registro de Usuario';
         require_once $vistas["layout"];
     }
 }

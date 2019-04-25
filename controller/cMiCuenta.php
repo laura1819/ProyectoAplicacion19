@@ -49,7 +49,6 @@ if (isset($_REQUEST['Confirmar']) && $entradaOk == true) { // si pulsamos confir
     header("Location: index.php");
 } else {
     $_SESSION['pagina'] = 'miCuenta';
-    $_SESSION['titulo'] = 'Editar Perfil';
     require_once $vistas["layout"];
 }
 ?>

@@ -25,7 +25,6 @@ if (isset($_REQUEST['Cancelar'])) { // si hemos pulsado cancelar
         }
     } else {
         $_SESSION['pagina'] = 'borrarCuenta';  // si no nos mantenemos en la pagina
-        $_SESSION['titulo'] = 'Borrar Cuenta';
         require_once $vistas["layout"];  // con el layout cargado
     }
 }

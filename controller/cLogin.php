@@ -47,6 +47,5 @@ if (isset($_REQUEST['Acceder']) && $entradaOk) { // si la entrada es ok
     }
 } // y si no seguimos en la pagina del login con el layout pertinente
 $_SESSION['pagina'] = 'login'; 
-$_SESSION['titulo'] = 'Inicio de Sesión';
 require_once $vistas["layout"];
 ?>

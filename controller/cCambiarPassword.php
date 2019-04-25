@@ -18,6 +18,7 @@ $aFormulario = ['pass1' => null, //Almacena el valor del pass1 dentro de una lis
 $aErrores = ['pass1' => null, //Guarda posibles errores en el campo pass1.
     'pass2' => null, //Guarda posibles errores en el campo pass2.
     'pass3' => null]; //Guarda posibles errores en el campo pass3.
+
 $passVieja = $_SESSION['usuario']->getPassword();
 $usuario = $_SESSION['usuario'];
 if (isset($_REQUEST['Cancelar'])) {
@@ -54,7 +55,6 @@ if (isset($_REQUEST['Cancelar'])) {
         header("Location: index.php");
     } else { // y si no nos mantenemos en la pagina en la que estamos
         $_SESSION['pagina'] = 'cambiarPassword'; 
-        $_SESSION['titulo'] = 'Cambiar Password';
         require_once $vistas["layout"];
     }
 }

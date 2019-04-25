@@ -8,9 +8,13 @@
  * @version 1.5
  */
 
+
+// configuracion de la base de datos
 require_once 'config/configuracionDB.php';
+// configuracion de validacion de formularios
 require_once 'core/validacionFormularios.php';
-require_once 'model/Usuario.php';
+// clases de la aplicacion
+require_once 'model/Usuario.php'; 
 
 
 
