@@ -15,8 +15,7 @@
  * 
  * Esta clase permite conectarse con la base de datos
  */
-error_reporting(E_ALL);
-        ini_set('display_errors', '0');
+
 
 class DBPDO {
     
@@ -41,12 +40,14 @@ class DBPDO {
             $consulta->execute($parametros); //Ejecutamos la consulta.
         } catch (PDOException $exc) {
             $consulta = null; //Destruimos la consulta.
-            echo $exc->getMessage();
+            echo $exc->getMessage();           
+        } finally {
             unset($miDB);
         }
         return $consulta;
     }
-
 }
 
 ?>
+
+
