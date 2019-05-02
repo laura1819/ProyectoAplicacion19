@@ -39,8 +39,23 @@ class DBPDO {
             $consulta = $miDB->prepare($sentenciaSQL); //Preparamos la consulta.
             $consulta->execute($parametros); //Ejecutamos la consulta.
         } catch (PDOException $exc) {
-            $consulta = null; //Destruimos la consulta.
-            echo $exc->getMessage();           
+            
+        setlocale(LC_TIME, 'es_ES.UTF-8');
+        date_default_timezone_set('Europe/Madrid');
+        $fecha = date('d-m-Y, H:i:s');
+        $archivo = 'tmp/errores.txt';
+        $file = fopen($archivo, 'archivo');
+        fwrite($file, "Fecha del error: " . $fecha . 
+                " Codigo : " . $exc->getCode() . 
+                " Mensaje : " . $exc->getMessage() .
+                " Fichero : " . $exc->getFile() .
+                " Linea : " . $exc->getLine() . "\r\n"
+                );       
+        
+                UsuarioPDO::redirige();    
+         //  $consulta = null; //Destruimos la consulta.
+         // echo $exc->getMessage();               
+            
         } finally {
             unset($miDB);
         }

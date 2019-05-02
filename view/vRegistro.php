@@ -57,7 +57,6 @@
                                             
                                             <input type="submit" name="Registrar" value="Registrar" class="btn btn-info btn-md">
                                         </div>
-
                                     </form>
                                 </div>
                             </div>
@@ -65,7 +64,4 @@
                     </div>
                 </div>
             </header>
-
-
-     
             </form>
