@@ -51,10 +51,10 @@ class DBPDO {
                 " Fichero : " . $exc->getFile() .
                 " Linea : " . $exc->getLine() . "\r\n"
                 );       
-        
-                UsuarioPDO::redirige();    
-         //  $consulta = null; //Destruimos la consulta.
-         // echo $exc->getMessage();               
+                                
+        UsuarioPDO::redirige();    
+        //  $consulta = null; //Destruimos la consulta.
+        // echo $exc->getMessage();               
             
         } finally {
             unset($miDB);

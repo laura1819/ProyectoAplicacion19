@@ -22,14 +22,14 @@
             <!-- Header -->
             <header class="masthead bg-primary text-white text-center">
                 <div id="login">
-                    <h3 class="text-center text-white pt-10">Formulario de Cambio de Contaseña</h3>
+                    <h3 class="text-center text-white pt-10">Formulario de Cambio de Contaseña</h3><br>
                     <div class="container">
                         <div id="login-row" class="row justify-content-center align-items-center">
                             <div id="login-column" class="col-md-6">
                                 <div id="login-box" class="col-md-12">
                                     <form id="login-form" class="form" action="" method="post">
                                         <div class="form-group">
-                                            <label for="username" class="text-white">Contraseña antigua:</label><br>
+                                            <label for="username" class="text-white">Contraseña antigua:</label>
                                             <input type="password" name="pass1" value="<?php echo $_REQUEST['usuario']; ?>">*
                                             <?php
                                             echo "<font color='#FF0000' size='2px'>$aErrores[pass1]</font>"; //Mostrará el mensaje de la variable en caso de que éste exista.
@@ -37,14 +37,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="password" class="text-white">Nueva contraseña:</label><br>
+                                            <label for="password" class="text-white">Nueva contraseña:</label>
                                             <input type="password" name="pass2" value="<?php echo $_REQUEST['descripcion']; ?>">*
                                             <?php
                                             echo "<font color='#FF0000' size='2px'>$aErrores[pass2]</font>"; //Mostrará el mensaje de la variable en caso de que éste exista.
                                             ?>
                                         </div>
                                         <div class="form-group">
-                                            <label for="password" class="text-white">Introduce de nuevo la contraseña:</label><br>
+                                            <label for="password" class="text-white">Nueva contraseña 2:</label>
                                             <input type="password" name="pass3" value="<?php echo $_REQUEST['pass']; ?>">*
                                             <?php
                                             echo "<font color='#FF0000' size='2px'>$aErrores[pass3]</font>"; //Mostrará el mensaje de la variable en caso de que éste exista.

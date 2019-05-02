@@ -35,14 +35,14 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
         <div id="login">
-            <h3 class="text-center text-white pt-10">Login form</h3>
+            <h3 class="text-center text-white pt-10">Formulario login</h3>
             <div class="container">
                 <div id="login-row" class="row justify-content-center align-items-center">
                     <div id="login-column" class="col-md-6">
                         <div id="login-box" class="col-md-12">
                             <form id="login-form" class="form" action="" method="post">
                                 <div class="form-group">
-                                    <label for="username" class="text-white">Username:</label><br>
+                                    <label for="username" class="text-white">Nombre:</label><br>
                                     <input type="text" name="usuario" id="username" >
                                    
                                 </div>
@@ -50,7 +50,7 @@
                                     echo "<font color='#FF0000' size='2px'>$aErrores[usuario]</font>"; //Mostrará el mensaje de la variable en caso de que éste exista.
                                     ?>
                                 <div class="form-group">
-                                    <label for="password" class="text-white">Password:</label><br>
+                                    <label for="password" class="text-white">Contraseña:</label><br>
                                     <input type="password" name="pass" id="password" >
                                    
                                 </div>

@@ -23,19 +23,19 @@
             <!-- Header -->
             <header class="masthead bg-primary text-white text-center">
                 <div id="login">
-                    <h3 class="text-center text-white pt-10">Formulario de Edicion de Perfil</h3>
+                    <h3 class="text-center text-white pt-10">Formulario de Edicion de Perfil</h3><br> 
                     <div class="container">
                         <div id="login-row" class="row justify-content-center align-items-center">
                             <div id="login-column" class="col-md-6">
                                 <div id="login-box" class="col-md-12">
-                                    <form id="login-form" class="form" action="" method="post">
+                                    <form  class="form" action="" method="post">
                                         <div class="form-group">
-                                            <label for="username" class="text-white">Codigo de Usuario:</label><br>
-                                            <input type="text" name="usuario" value="<?php echo $_SESSION['usuario']->getCodUsuario(); ?>" disabled>*                                           
-                                        </div>
+                                            <label for="username" >Codigo de Usuario:</label>
+                                            <input type="text" name="usuario" value="<?php echo $_SESSION['usuario']->getCodUsuario(); ?>" disabled>* <br>  <br>                                         
+                                      
 
-                                        <div class="form-group">
-                                            <label for="password" class="text-white">Descripcion de Usuario:</label><br>
+                                       
+                                            <label for="password" class="text-white">Descripcion de Usuario:</label>
                                             <input type="text" name="descripcion" value="<?php
                                             if ($_REQUEST['descripcion'] != null) {
                                                 echo $_REQUEST['descripcion'];
@@ -45,7 +45,14 @@
                                             ?>"  required>*
                                                    <?php
                                                    echo "<font color='#FF0000' size='2px'>$aErrores[descripcion]</font>"; //Mostrará el mensaje de la variable en caso de que éste exista.
-                                                   ?>
+                                                   ?></br><br> 
+                                              <label for="password" class="text-white">Visitas del Usuario:</label>    
+                                              <input type="text" name="usuario" size="3" value="<?php echo $_SESSION['usuario']->getNumAccesos(); ?>" disabled>* <br><br> 
+                                            
+                                             <label for="password" class="text-white">Perfil del usuario:</label>    
+                                             <input type="text" name="usuario" size="12" value="<?php echo $_SESSION['usuario']->getPerfil(); ?>" disabled>*  <br><br> 
+                                            
+                                           
                                         </div>
 
 
