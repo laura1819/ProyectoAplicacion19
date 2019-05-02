@@ -195,7 +195,7 @@ class UsuarioPDO implements UsuarioDB {
     }
     
      public function redirige(){
-         $_SESSION['pagina'] = 'wip'; // vamos a la pagina mi cuenta
+         $_SESSION['pagina'] = 'errores'; // vamos a la pagina mi cuenta
          header("Location: index.php");
         
     }
